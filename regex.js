@@ -13,4 +13,14 @@ var
 	 *
 	 * @type {RegExp}
 	 */
-	POSTAL_CODE = /^[a-ceghj-nprstvxy]\d[a-ceghj-nprstv-z](\s)?\d[a-ceghj-nprstv-z]\d/i;
+	POSTAL_CODE = /^[a-ceghj-nprstvxy]\d[a-ceghj-nprstv-z](\s)?\d[a-ceghj-nprstv-z]\d$/i,
+	/**
+	 * Username Pattern
+	 * This pattern is a starting point and should be modified
+	 * to match the need of the application.
+	 * Base pattern requirements are characters, numbers, -, _
+	 * and between 4 and 18 characters.
+	 *
+	 * @type {RegExp}
+	 */
+	USERNAME = /^[a-zA-Z0-9\-_]{4,18}$/;
