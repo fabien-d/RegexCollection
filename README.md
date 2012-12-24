@@ -2,7 +2,7 @@ A collection of useful regex patterns
 
 ## License
 
- is licensed under MIT http://www.opensource.org/licenses/MIT
+RegexCollection is licensed under MIT http://www.opensource.org/licenses/MIT
 
 ### Copyright
 

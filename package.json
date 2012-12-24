@@ -1,8 +1,8 @@
 {
-	"name"        : "regex",
+	"name"        : "RegexCollection",
 	"description" : "A collection of useful regex patterns",
 	"version"     : "0.0.1",
-	"homepage"    : "http://fabien-d.github.com/",
+	"homepage"    : "https://github.com/fabien-d/RegexCollection",
 	"author" : {
 		"name"  : "Fabien Doiron",
 		"email" : "fabien.doiron@gmail.com"
