@@ -1,4 +1,4 @@
-A collection of useful regex patterns
+A collection of useful regex patterns. The regex file is not intended to be used as is. It is meant as a reference/cheat sheet.
 
 ## License
 
