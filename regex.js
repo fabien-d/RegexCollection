@@ -23,4 +23,11 @@ var
 	 *
 	 * @type {RegExp}
 	 */
-	USERNAME = /^[a-zA-Z0-9\-_]{4,18}$/;
+	USERNAME = /^[a-zA-Z0-9\-_]{4,18}$/,
+	/**
+	 * US Zip Code Pattern
+	 * Matches both the 5 and 9 (10 with space or dash) digits (zip + 4)
+	 *
+	 * @type {RegExp}
+	 */
+	ZIP_CODE = /^\d{5}([ \-]?\d{4})?$/;
