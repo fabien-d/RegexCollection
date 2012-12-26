@@ -8,6 +8,25 @@ var
 	 */
 	EMAIL = /^(?!.*([.])\1)[^.][^@]+[^.]@[^\s@]+$/,
 	/**
+	 * Password Pattern
+	 * This pattern is a starting point and should be modified
+	 * to match the need of the application.
+	 *
+	 * Base pattern requirements are:
+	 * 1 Uppercase
+	 * 1 Number
+	 * Be between 6 and 12 characters
+	 *
+	 * Accepts:
+	 * Uppercase characters
+	 * Lowercase characters
+	 * Numbers
+	 * Special Characters !, @, #, $, %
+	 *
+	 * @type {RegExp}
+	 */
+	PASSWORD = /^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9!@#$%]{6,12}$/,
+	/**
 	 * Canadian Postal Code Pattern
 	 * Validating canadian postal code
 	 *
@@ -18,7 +37,7 @@ var
 	 * Username Pattern
 	 * This pattern is a starting point and should be modified
 	 * to match the need of the application.
-	 * Base pattern requirements are characters, numbers, -, _
+	 * Base pattern requirements are: characters, numbers, -, _
 	 * and between 4 and 18 characters.
 	 *
 	 * @type {RegExp}
