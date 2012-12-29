@@ -34,6 +34,14 @@ var
 	 */
 	POSTAL_CODE = /^[a-ceghj-nprstvxy]\d[a-ceghj-nprstv-z](\s)?\d[a-ceghj-nprstv-z]\d$/i,
 	/**
+	 * URL Pattern
+	 * Matches ftp, git and http(s) patterns as below
+	 * scheme://domain:port/path?query_string#fragment_id
+	 *
+	 * @type {RegExp}
+	 */
+	URL = /^((ftp|git|https?):\/\/)?[a-z0-9][a-z0-9\.\-]{4,252}\.[a-z]{2,6}(:\d{1,5})?(\/([\w\.\/\-&\?=#]?)+)?$/i,
+	/**
 	 * Username Pattern
 	 * This pattern is a starting point and should be modified
 	 * to match the need of the application.
