@@ -1,5 +1,5 @@
 test("URL validation", function() {
-	expect(20);
+	expect(19);
 	var u = URL;
 	// testing invalid patterns
 	deepEqual(u.test("-example.com"), false, "URL cannot begin with a dash");
@@ -8,7 +8,6 @@ test("URL validation", function() {
 	deepEqual(u.test("htp://example.com"), false, "URL scheme is wrong, should be http");
 	deepEqual(u.test("ftp;//example.com"), false, "URL scheme is wrong, cannot be a semicolon");
 	deepEqual(u.test("http:/example.com"), false, "URL scheme is wrong, should have 2 slashes");
-	deepEqual(u.test("http://www.abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefg.com"), false, "URL domain must be between 4 and 255");
 	deepEqual(u.test("http://www.example.a"), false, "URL top-level domain must be between 2 and 6 characters");
 	// testing valid patterns
 	deepEqual(u.test("http://www.example.com"), true, "valid URL with http scheme");
